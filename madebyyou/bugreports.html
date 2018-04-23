@@ -1,0 +1,117 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+		<title>Bug Reports - Made by You - XKit 7 - The Browser Extension for Tumblr</title>		<meta name="description" content="Home of the XKit extension for Tumblr. Free download." />
+		<link href='//fonts.googleapis.com/css?family=Lato:400,100,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/sevenr/style/standard.css?v359" type="text/css" />
+		<link rel="icon" type="image/png" href="://www.xkit.info/sevenr/i/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.xkit.info/sevenr/i/favicon.ico">
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/sevenr/style/jquery.js"></script>
+		<script type="text/javascript" src="/sevenr/style/standard.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="menu">
+			<div id="menu-inner" class="center-element">
+				<a href="/seven/"><img src="/sevenr/i/logo.png" id="logo"></a>
+				<ul>
+				<a href="/seven/" ><li>Home</li></a>
+				<a href="/seven/features" ><li>Features</li></a>
+				<a href="/seven/download" ><li>Download</li></a>
+				<a href="/seven/support" ><li>Support & Documentation</li></a>
+				<a href="/tips/" ><li>Tips</li></a>
+				<a style="display:none;" href="/xim/" ><li>XIM</li></a>
+				<a href="/seven/spread" ><li>Spread XKit</li></a>
+				<a href="/seven/donate" ><li>Donate!</li></a>
+				<a href="/xcloud/webaccess/" class="xcmica "><li style="width: 16px; position: relative;"><img src="/sevenr/i/xcmic.png" class="xcmic"></li></a>
+				<a href="http://xkit-extension.tumblr.com" target="_BLANK"><li>Blog &rarr;</li></a>
+				</ul>
+			</div>
+		</div>
+			<link href='../madebyyou.css' rel='stylesheet' type='text/css'>
+
+		<div id="page-intro" class="madebyyou small">
+			<div class="center-element" style="text-align: left;">
+			<h1>XKit: Made by You</h1>
+			<h2>Bug Reports and their results</h2>
+			</div>
+		</div>
+		
+		<div id="bubble">
+			<div class="center-element">
+				<a href="/madebyyou/" class="btn" style="margin-top: 4px;">&larr; Go back to Made By You page</a>
+			</div>
+		</div>
+
+		<div class="center-element textie">
+		
+			<h1>Why are bug reports important?</h1>
+			Quite simple: there are so many features in XKit, and Tumblr is
+			always changing things. Most of these changes are invisible to the user,
+			since they are related to how data is transmitted to Tumblr servers,
+			or the client-side implementation of some Tumblr features. Since
+			I don't use all of the features of XKit, every day, it is impossible for me
+			to spot most of the errors without your help.
+			
+			<div class="separator">&nbsp;</div>
+			
+			<div style="text-align: center;"><h1>for every change Tumblr makes that is visible 
+			to the user, there are over 20 changes invisible to them.</h1></div>
+			
+			<div class="separator">&nbsp;</div>
+			
+			<h1>Changes? Like what?</h1>
+			I'm going to give you two simple examples: one when Shuffle Queue
+			stopped working (on both XKit 7 and XKit 6) and when XInbox's tagging
+			feature stopped working (on XKit 6 only).<br/><br/>
+			
+			<b>Shuffle Queue</b><br/>
+			Around a week ago, an user reported that Shuffle Queue was not working.
+			I've inspected the page and code and found out that Tumblr made a
+			small change: they've changed the capitalization of a function. In
+			JavaScript, functions are case-sensitive: "myfunction" is not the same
+			as "myFunction". And that's what they did. So Shuffle Queue stopped working,
+			I've updated it and published it, which took ~5 minutes, and everything was OK.
+			
+			<br/><br/>
+			<b>Shuffle Queue II: Queue Strikes Back</b><br/>
+			Less than a week after Tumblr changed the way arranging queued posts works,
+			they've changed it again: this time, completely changing the way it works.
+			I've spent over 4 hours rewriting the extension, while trying to reverse-engineer
+			how it was working. And now, we have Shuffle Queue back.
+			
+			<br/><br/><b>XInbox</b><br/>
+			Just yesterday, Tumblr changed the ID of the Inbox body from
+			"messages_submissions" to "messages_submissions_inbox".  A small change,
+			and invisible to the user, but it confused XInbox, so it decided that the user
+			was not in the inbox, so it did not switch on the tagging function built-in.
+			
+			<div class="separator">&nbsp;</div>
+			
+			<h1>In short</h1>
+			In short, your bug reports keep me up to date with the Tumblr
+			changes that I would probably miss without your help.<br/>
+			So please keep them coming! Every bug report means one less bug
+			for you other others to deal with.
+			
+			
+		</div>
+		
+		
+		
+		<div id="footer">
+			<div class="center-element">
+			Copyright &copy; 2011 - 2014 <a href="http://www.studioxenix.com/">STUDIO XENIX</a>. By using XKit, you are
+			agreeing with the <a href="/eula/">XKit EULA</a>.<br/>
+			XKit is in no way associated with Tumblr, it is an independent project.<br/>
+			Also available on <a href="https://github.com/atesh/XKit">GitHub</a>, released under GPL v3.
+			</div>
+		</div>
+	
+	</body>
+
+</html><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/61188dc1067688e1d72fad69721bd29e?id=63031c63f2e6";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

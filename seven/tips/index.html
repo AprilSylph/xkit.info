@@ -1,0 +1,672 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+		<title>Tips - XKit 7 - The Browser Extension for Tumblr</title>		<meta name="description" content="Home of the XKit extension for Tumblr. Free download." />
+		<link href='//fonts.googleapis.com/css?family=Lato:400,100,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/sevenr/style/standard.css?v359" type="text/css" />
+		<link rel="icon" type="image/png" href="://www.xkit.info/sevenr/i/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.xkit.info/sevenr/i/favicon.ico">
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/sevenr/style/jquery.js"></script>
+		<script type="text/javascript" src="/sevenr/style/standard.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="menu">
+			<div id="menu-inner" class="center-element">
+				<a href="/seven/"><img src="/sevenr/i/logo.png" id="logo"></a>
+				<ul>
+				<a href="/seven/" ><li>Home</li></a>
+				<a href="/seven/features" ><li>Features</li></a>
+				<a href="/seven/download" ><li>Download</li></a>
+				<a href="/seven/support" ><li>Support & Documentation</li></a>
+				<a href="/tips/" class="selected"><li>Tips</li></a>
+				<a style="display:none;" href="/xim/" ><li>XIM</li></a>
+				<a href="/seven/spread" ><li>Spread XKit</li></a>
+				<a href="/seven/donate" ><li>Donate!</li></a>
+				<a href="/xcloud/webaccess/" class="xcmica "><li style="width: 16px; position: relative;"><img src="/sevenr/i/xcmic.png" class="xcmic"></li></a>
+				<a href="http://xkit-extension.tumblr.com" target="_BLANK"><li>Blog &rarr;</li></a>
+				</ul>
+			</div>
+		</div>
+				<div id="page-intro">
+			<div class="center-element">
+			<h1>XKit Tips</h1>
+			<h2>Blog like a pro</h2>
+			</div>
+		</div>
+		
+		<style>
+			.tip {
+				background: white;
+				box-shadow: 0px 1px 3px rgba(0,0,0,0.22);
+				border-radius: 4px;
+				margin-bottom: 20px;
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				float: left; height: 200px;
+				width: 470px; overflow: hidden;
+				position: relative;
+			}
+			.tip a {
+				color: #255a8e;	
+			}
+			.tip * {
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;	
+			}
+			.tip:nth-child(even) {
+				margin-left: 10px;
+			}
+			.tip:nth-child(odd) {
+				margin-right: 10px;
+			}			
+			.tip .title {
+				font-weight: bold;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: black;
+				font-weight: 900;	
+				height: 45px; line-height: 45px;
+				padding: 0px 20px 0px 40px;
+				text-align: left;
+				border-bottom: 1px solid rgb(200,200,200);
+			}
+			.tip .message {
+				padding: 10px 20px 15px 40px;	
+				font-size: 14px;
+				line-height: 23px;
+				text-align: left;
+				position: relative;
+			}
+			.tip .message.with-screenshot {
+				padding-top: 98px;	
+				font-size: 13px;
+			}
+			.tip key {
+				display: inline-block;
+				vertical-align: baseline;
+				border: 1px solid rgb(180,180,180);
+				color: rgb(100,100,100);
+				text-transform: uppercase;
+				font-weight: 900;
+				border-radius: 3px;	
+				font-size: 13px;
+				box-shadow: 0px 2px 0px rgba(0,0,0,0.07);
+				padding: 2px 8px;
+				margin: 0px 4px;
+				line-height: 20px;
+			}
+			.tip .level {
+				position: absolute;
+				top: 87px; left: -88px;
+				background: rgb(240,240,240);
+				box-shadow: inset 0px -1px 2px rgba(0,0,0,0.11);
+				height: 25px;
+				line-height: 26px;
+				font-weight: 500;
+				text-transform: uppercase;
+				font-size: 12px;
+				width: 200px;
+				padding-left: 9px;
+				border-bottom: 1px solid rgb(200,200,200);
+				text-shadow: 0px 1px 0px rgba(0,0,0,0.22);
+				-webkit-transform: rotate(-90deg);
+				-moz-transform: rotate(-90deg);
+				-o-transform: rotate(-90deg);
+				-ms-transform: rotate(-90deg);
+				transform: rotate(-90deg);
+			}
+			.tip .level span  {
+				box-shadow: 0px 4px 0px 0px;
+				box-shadow: inset 0px -1px 2px rgba(0,0,0,0.31);
+				background: #07a85e;
+				color: white;
+				position: absolute;
+				top: 0; left: 0;
+				height: 24px;
+				line-height: 24px;
+				padding: 0px 10px;
+				display: block;
+			}
+			.tip.intermediate .level span {
+				background: #1aa2e2;	
+			}
+			.tip.advanced .level span {
+				background: #b41313;	
+			}
+			.tip .icon {
+				border-radius: 4px;
+				width: 20px;
+				height: 20px;
+				box-shadow: 0px 1px 2px rgba(0,0,0,0.21);	
+				position: absolute;
+				top: 12px;
+				left: 11px;
+			}
+			.tip cp {
+				display: inline-block;
+				vertical-align: middle;
+				background: no-repeat url('cpicon.png');
+				min-width: 16px; height: 16px;
+				line-height: 14px;
+				font-size: 13px;
+				font-weight: bold;
+				padding-left: 19px;
+				color: rgb(60,60,60);
+				margin-left: 5px; margin-right: 5px;
+			}
+			.tip .screenshot {
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 90px;
+			}
+			.tip install {
+				display: inline-block;
+				color: rgb(140,140,140);
+				font-size: 12px;
+			}
+		</style>
+		
+		<div class="center-element">
+		
+			<div class="tip beginner" data-extension="one_click_reply">
+			
+				<div class="title">Reply to notifications</div>
+				
+				<div class="message">
+				
+					Hover over a notification, and click on either
+					the Reply button or the arrow to create a new post
+					containing the notification to reply to it.
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="one_click_reply">
+			
+				<div class="title">Reply to multiple notifications at once</div>
+
+				<div class="message">
+				
+					Hold down the <key>ALT</key> key while
+					clicking on notifications to select/deselect notifications. When
+					done selecting, let go of the <key>ALT</key> key and
+					click on a reply button/icon to create post containing
+					all the selected notifications.
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="xkit">
+			
+				<div class="title">Get new extensions</div>
+				
+				<div class="message">
+				
+					Click on the XKit control panel icon (<cp></cp> on the
+					top-right of the screen) then click on Get Extensions tab
+					to download new extensions. Some tips on this page
+					require you to install new extensions.
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="xkit">
+			
+				<div class="title">Disable/Enable Extensions</div>
+
+				<div class="message">
+					
+					<img src="enable.png" class="screenshot">
+					You can easily enable/disable extensions by going to
+					<cp>&rarr; My XKit</cp>, selecting an extension
+					then toggling the checkbox shown.
+				
+				</div>
+			
+			</div>
+			
+			
+			<div class="tip beginner" data-extension="xkit">
+			
+				<div class="title">Disable Notifications</div>
+
+				<div class="message">
+					
+					The News section of XKit is regularly updated to
+					let you know which which new
+					features / extensions were added, and other XKit
+					related news (surveys, polls, etc). Although not 
+					recommended, you can turn them off by going to<cp>&rarr; Other &rarr; News Notifications</cp> and unchecking the checkbox on the bottom.
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="xkit">
+			
+				<div class="title">Speed up XKit</div>
+
+				<div class="message">
+					
+					Some extensions or features of XKit can slow down
+					your computer, especially if you have a slow computer
+					or internet connection. Disable the extensions you don't
+					use often (especially ones which have a yellow warning bar)
+					and features (especially the ones with a Turtle icon) to
+					speed XKit up.
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="postblock">
+			
+				<div class="title">Block posts you don't like</div>
+
+				<div class="message">
+					
+					<img src="postblock.png" class="screenshot">
+					Click on the Post Block button to prevent
+					a post from appearing on your dashboard.
+					<install>Requires PostBlock to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="tagviewer">
+			
+				<div class="title">View Tags</div>
+				
+				<div class="message">
+				
+					<img src="tagviewer.png" class="screenshot">
+					Wonder what tags people added to a post? Click
+					on the TagViewer icon to see all of them at a glance.
+					<install>Requires TagViewer to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="xinbox">
+			
+				<div class="title">Tag your asks</div>
+
+				<div class="message">
+					
+					You can add tags using XInbox to your asks
+					before publishing them. You can also add custom tags
+					for all your posts (ie: "Xenixlet Answers!"). Click on the
+					<cp>&rarr; My XKit &rarr; XInbox</cp> to add custom tags (and toggle
+					more features such as Slim Fan Mail)
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="timestamps">
+			
+				<div class="title">Add Timestamps to posts</div>
+
+				<div class="message">
+					
+					Install Timestamps from the  gallery to get a
+					timestamp on each post. Make sure your Timezone setting
+					on your Tumblr settings page is correct, incorrect Timezone
+					setting can cause Timestamps to show wrong date/time.
+					
+					<install>Requires Timestamps to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip intermediate" data-extension="timestamps">
+			
+				<div class="title">Add custom Timestamps to posts</div>
+
+				<div class="message">
+					
+					Click on the <cp>&rarr; My XKit &rarr; Timestamps</cp> 
+					to change the format of the Timestamp using the XKit
+					Timestamp Format.
+					
+					<install>Requires Timestamps to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="auto_tagger">
+			
+				<div class="title">Keep the tags while reblogging</div>
+
+				<div class="message">
+					
+					Install AutoTagger from the gallery, then 
+					go to <cp>&rarr; My XKit &rarr; AutoTagger</cp> 
+					and click on "Keep original tags when I'm reblogging a post"
+					to keep the post's tags while reblogging it.
+					<install>Requires AutoTagger to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="cleanfeed">
+			
+				<div class="title">Browse in public</div>
+
+				<div class="message">
+					
+					You can use the button on the
+					sidebar or the <key>ALT</key> + <key>X</key> key
+					combination to enable/disable CleanFeed. Images will
+					be hidden until you hover over them so you can browse
+					Tumblr in public without worrying about NSFW stuff.
+					<install>Requires CleanFeed to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="show_more">
+			
+				<div class="title">Get more user options</div>
+
+				<div class="message">
+					
+					<img src="usermenus.png" class="screenshot">
+					Install User Menus+ to get the old user menu back,
+					and options such as avatar magnifier and Likes button.
+					<install>Requires User Menus+ to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="outbox">
+			
+				<div class="title">Save outgoing fan mail / replies</div>
+
+				<div class="message">
+					
+					<img src="outbox.png" class="screenshot">
+					Install Outbox to save the last 20 fan mail you've sent
+					and replies to asks you've received.
+					<install>Requires Outbox to be installed</install>
+				
+				</div>
+			
+			</div>
+			
+			<div class="tip intermediate" data-extension="one_click_postage">
+			
+				<div class="title">Use shortcuts for blogging</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; My XKit &rarr; One-Click Postage</cp> and
+					enable Keyboard Shortcuts setting. Then you can use <key>J</key>
+					and <key>K</key> to navigate through posts, and use <key>R</key>
+					to reblog, <key>Q</key> to queue, <key>D</key> to draft and
+					<key>T</key> to quickly add tags.
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="one_click_postage">
+			
+				<div class="title">See what you've blogged before</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; My XKit &rarr; One-Click Postage</cp> and
+					enable AlreadyReblogged. From then on, the posts you've
+					queued, drafted and reblogged using One-Click Postage's
+					popup window will have a green Reblog icon next time you see them.
+					Note that this does not apply to posts reblogged using Tumblr's
+					window.
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="read_posts">
+			
+				<div class="title">Dim the posts you've seen before</div>
+
+				<div class="message">
+					
+					Read Posts dims the posts you've already seen before,
+					so you can just scroll by them.  <install>Requires Read Posts to be installed</install>
+					
+				</div>
+			
+			</div>
+			
+			
+			<div class="tip beginner" data-extension="tweaks">
+			
+				<div class="title">Wrap tags for easier reading</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; My XKit &rarr; Tweaks</cp> and
+					enable Wrap Tags. From then on, the tags on the posts
+					will wrap so you can read them without dragging them.
+					Tweaks also has a lot of other features like the ability
+					to hide the Radar, notes, slim block quotes and more.
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip intermediate" data-extension="xcloud">
+			
+				<div class="title">Backup / Restore settings</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; XCloud</cp> and
+					create an XCloud account. Then you can Sync (backup)
+					and restore your XKit settings with one click. You can use
+					it to backup your settings or synchronize them across
+					computers.
+					
+					<install>Requires XCloud to be installed</install>
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip intermediate" data-extension="blacklist">
+			
+				<div class="title">Blacklist posts</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; My XKit &rarr; Blacklist</cp> to add
+					words to your blacklist. You can also enable and use
+					<key>ALT</key> + <key>B</key> configuration
+					to quickly add words to your blacklist.
+					
+					<install>Requires Blacklist to be installed</install>
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip intermediate" data-extension="blacklist">
+			
+				<div class="title">Whitelist posts</div>
+
+				<div class="message">
+					
+					You can also add whitelist words to your Blacklist extension.
+					For example, if you've added <b>cat</b> to your blacklist
+					but <b>kitten</b> to your whitelist, posts containing <b>cat</b>
+					will be blocked, but posts containing <b>kitten</b> will not,
+					even if they have <b>cat</b> in them. 
+					
+					<install>Requires Blacklist to be installed</install>
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="themes">
+			
+				<div class="title">Theme your dashboard</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; My XKit &rarr; Themes</cp> to select
+					a theme for your dashboard. Themes are added from time to
+					time, so make sure to follow the XKit Blog to be notified when
+					new themes are available to use.
+					
+					<install>Requires Themes to be installed</install>
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip advanced" data-extension="theme_editor">
+			
+				<div class="title">Create a theme</div>
+
+				<div class="message">
+					
+					If you have Themes installed, 
+					go to <cp>&rarr; My XKit &rarr; Themes</cp> and disable it,
+					then click on the Edit Theme button on your dashboard
+					to start designing your own theme. CSS knowledge is required
+					to design themes. If you do not know CSS, do not install
+					Theme Editor.
+					
+					<install>Requires Theme Editor to be installed</install>
+					
+				</div>
+			
+			</div>
+			
+			<div class="tip advanced" data-extension="xkit">
+			
+				<div class="title">Create an extension</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; Other &rarr; XKit Editor</cp> to open
+					XKit Extension Editor to start writing your own extension.
+					Advanced Javascript knowledge is needed. Be careful,
+					and stay away from the Editor if you do not know Javascript
+					or how XKit works, you can break something. Check the <a href="https://github.com/atesh/XKit/wiki">
+					XKit Developer Wiki</a> to learn more.
+
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="bookmarker">
+			
+				<div class="title">Create bookmarks</div>
+
+				<div class="message">
+					
+					Click on the bookmarker icon on posts to bookmark
+					a post. Bookmarked posts will appear on your sidebar.
+					Click on your bookmarks while holding the <key>ALT</key>
+					key to rename or delete them.
+
+				</div>
+			
+			</div>
+			
+			<div class="tip beginner" data-extension="xinbox">
+			
+				<div class="title">Quickly Draft / Queue asks</div>
+
+				<div class="message">
+					
+					<img src="xinbox-buttons.png" class="screenshot">
+					Go to <cp>&rarr; My XKit &rarr; XInbox</cp> and enable
+					"Show Queue and Draft buttons" to enable this function.
+
+				</div>
+			
+			</div>
+			
+			
+			<div class="tip intermediate" data-extension="quick_tags">
+			
+				<div class="title">Create Tag Bundles</div>
+
+				<div class="message">
+					
+					Go to <cp>&rarr; My XKit &rarr; Quick Tags</cp> to create
+					Tag Bundles and add multiple tags to a post with a single click. You can
+					add Tag Bundles while reblogging a post or after
+					it is published, using the Quick Tags icon (a tag with a plus sign)
+					<install>Requires Quick Tags to be installed</install>
+				</div>
+			
+			</div>
+									
+			<div class="clear" style="clear: both; height:0;">&nbsp;</div>
+
+		</div>
+		
+		<script>
+		
+		$(document).ready(function() {
+			
+			$(".tip").each(function() {
+				
+				var m_level = "beginner";
+				if ($(this).hasClass("intermediate")) { m_level = "intermediate"; }	
+				if ($(this).hasClass("advanced")) { m_level = "advanced"; }
+				
+				$(this).append("<div class=\"level\"><span>" + m_level + "</span></div>");
+				
+				var icon = "http://puaga.com/tips/get_icon.php?extension=" + $(this).attr('data-extension');
+				$(this).append("<img class=\"icon\" src=\"" + icon + "\">");
+				
+			});	
+			
+			$(".screenshot").each(function() {
+				
+				$(this).parent().addClass("with-screenshot");	
+				
+			});
+			
+		});
+		
+		</script>
+		
+		
+		
+		<div id="footer">
+			<div class="center-element">
+			Copyright &copy; 2011 - 2014 <a href="http://www.studioxenix.com/">STUDIO XENIX</a>. By using XKit, you are
+			agreeing with the <a href="/eula/">XKit EULA</a>.<br/>
+			XKit is in no way associated with Tumblr, it is an independent project.<br/>
+			Also available on <a href="https://github.com/atesh/XKit">GitHub</a>, released under GPL v3.
+			</div>
+		</div>
+	
+	</body>
+
+</html><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/61188dc1067688e1d72fad69721bd29e?id=63031c63f2e6";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

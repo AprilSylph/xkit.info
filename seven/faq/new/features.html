@@ -1,0 +1,307 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+		<title>FAQ - XKit 7 - The Browser Extension for Tumblr</title>		<meta name="description" content="Home of the XKit extension for Tumblr. Free download." />
+		<link href='//fonts.googleapis.com/css?family=Lato:400,100,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/sevenr/style/standard.css?v359" type="text/css" />
+		<link rel="icon" type="image/png" href="://www.xkit.info/sevenr/i/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.xkit.info/sevenr/i/favicon.ico">
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/sevenr/style/jquery.js"></script>
+		<script type="text/javascript" src="/sevenr/style/standard.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="menu">
+			<div id="menu-inner" class="center-element">
+				<a href="/seven/"><img src="/sevenr/i/logo.png" id="logo"></a>
+				<ul>
+				<a href="/seven/" ><li>Home</li></a>
+				<a href="/seven/features" ><li>Features</li></a>
+				<a href="/seven/download" ><li>Download</li></a>
+				<a href="/seven/support" class="selected"><li>Support & Documentation</li></a>
+				<a href="/tips/" ><li>Tips</li></a>
+				<a style="display:none;" href="/xim/" ><li>XIM</li></a>
+				<a href="/seven/spread" ><li>Spread XKit</li></a>
+				<a href="/seven/donate" ><li>Donate!</li></a>
+				<a href="/xcloud/webaccess/" class="xcmica "><li style="width: 16px; position: relative;"><img src="/sevenr/i/xcmic.png" class="xcmic"></li></a>
+				<a href="http://xkit-extension.tumblr.com" target="_BLANK"><li>Blog &rarr;</li></a>
+				</ul>
+			</div>
+		</div>
+		<style>
+	 .faq-icon {
+ 	width: 140px;
+ 	height: 140px;
+ 	float: left;
+ 	display: inline-block;
+ 	background: white;	
+ 	box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	border: 1px solid rgb(200,200,200);
+ 	border-left: 0;
+ 	box-shadow: 0px 1px 2px rgba(0,0,0,0.08);
+ 	text-align: center;
+ 	font-size: 12px;
+ 	color: rgb(120,120,120);
+ 	position: relative;
+ }
+ 
+.faq-separator {
+	font-weight: bold;
+	padding: 7px 15px;	
+}
+ 
+ #faq-loading {
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	font-size: 22px;
+ 	text-align: center;
+ 	color: rgb(160,160,160);
+ 	text-shadow: 0px 1px 0px white;	
+ }
+ 
+ .question .type {
+ 	position: absolute;
+ 	height: 15px;
+ 	line-height: 15px;
+ 	right: 15px;
+ 	top: 13px;
+ 	font-size: 13px;
+ 	font-weight: bold;
+ }
+ 
+ .question a {
+ 	color: black;
+ 	text-decoration: underline;	
+ }
+ 
+ .question p {
+ 	margin: 0;
+ 	padding: 10px 15px;
+ 	color: rgb(120,120,120);
+ }
+ 
+ .question {
+ 	background: rgb(248,248,248);
+  	color: rgb(120,120,120);
+   	box-shadow: 0px 1px 2px rgba(0,0,0,0.08);
+   	border: 1px solid rgb(200,200,200);
+   	border-radius: 4px;
+   	margin-bottom: 5px;
+   	cursor: pointer;
+   	position: relative;
+ }
+ 
+ .question:hover {
+ 	color: black;
+ 	background: white; 	
+ }
+ 
+.question.selected {
+	background: white !important;	
+}
+
+.question.selected p {
+	color: black;	
+}
+ 
+ .question .answer {
+ 	color: rgb(100,100,100);
+ 	border-top: 1px solid rgb(200,200,200);
+ 	padding: 10px 15px;
+ 	display: none;	
+ 	font-size: 14px;
+ 	line-height: 22px;
+ }
+ 
+.faq-icon:hover {
+	box-shadow: 	0px 1px 2px rgba(0,0,0,0.12), inset 0px 1px 0px white;
+	background: rgb(245,245,245);
+	color: rgb(60,60,60);
+	cursor: pointer;
+}
+
+.faq-icon:active {
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.22);
+	background: rgb(215,215,215);
+	color: rgb(60,60,60);
+	cursor: pointer;
+}
+
+.faq-icon.selected {
+	background: rgb(235,235,235) !important;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.08), inset 0px 1px 2px rgba(0,0,0,0.22) !important;
+	color: rgb(60,60,60) !important;
+}
+
+.faq-icon img {
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -26px;
+	margin-top: -43px;	
+}
+
+.faq-icon:active img {
+	margin-top: -42px;	
+}
+ 
+.faq-icon p {
+	position: absolute;
+	bottom: 15px;
+	left: 0px;
+	width: 100%;
+	padding: 0px 10px;  	
+ 	box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+}
+
+.faq-icon.two-lines p {
+	bottom: 8px;	
+}
+ 
+.faq-icon:first-child {
+  	border-left: 1px solid rgb(200,200,200);
+  	border-radius: 6px 0px 0px 6px;
+  }
+  
+.faq-icon:last-child {
+  	border-radius: 0px 6px 6px 0px;
+  }
+ 
+ #faq-icons {
+ 	height: 140px;
+ 	margin-bottom: 20px;	
+ }</style>
+
+		<div id="page-intro">
+			<div class="center-element">
+			<h1>Have a question?</h1>
+			<h2>Go through the most asked questions.</h2>
+			</div>
+		</div>
+		
+		<div class="center-element">
+		
+			<div id="faq-icons">
+				
+				<div class="faq-icon two-lines" data-section="popular">
+					<img src="icons/popular.png">
+					<p>Most Popular Questions</p>
+				</div>
+				
+				<div class="faq-icon" data-section="features">
+					<img src="icons/features.png">
+					<p>Features</p>
+				</div>
+				
+				<div class="faq-icon" data-section="errors">
+					<img src="icons/error.png">
+					<p>Error Messages</p>
+				</div>
+				
+				<div class="faq-icon two-lines" data-section="installing">
+					<img src="icons/installing.png">
+					<p>Installing and Upgrading</p>
+				</div>
+				
+				<div class="faq-icon" data-section="uninstalling">
+					<img src="icons/uninstalling.png">
+					<p>Uninstalling</p>
+				</div>
+				
+				<div class="faq-icon" data-section="safety">
+					<img src="icons/safety.png">
+					<p>Safety + Privacy</p>
+				</div>
+				
+				<div class="faq-icon" data-section="miscellaneous">
+					<img src="icons/misc.png">
+					<p>Miscellaneous</p>
+				</div>
+				
+			</div>
+			
+			<div id="faq-questions">
+			
+			
+			</div>
+		
+		</div>
+		
+		<script>
+		
+			var loading_page = false;
+		
+			$(".faq-icon").click(function(event) {
+
+				event.preventDefault();
+				load_section($(this));
+
+			});
+
+			$(".faq-icon:first-child").trigger('click');
+			
+			function load_section(obj) {
+				
+				if ($(obj).hasClass("selected") == true) { return; }
+				if (loading_page === true) { return; }
+				
+				loading_page = true;
+				
+				var url = "sections/" + $(obj).attr('data-section') + ".php?fcth=" + makeid();
+				
+				$(".faq-icon").removeClass("selected");
+				$(obj).addClass("selected");
+				
+				$("#faq-questions").html("<div id=\"faq-loading\">Loading, please wait..</div>");
+				
+				$.get(url, function(data) {
+				
+					loading_page = false;
+					$("#faq-questions").html(data);
+
+					$(".question").click(function() {
+		
+						$(".question").not(this).removeClass("selected");
+						$(".question").not(this).find(".answer").slideUp("fast");
+
+						$(this).toggleClass("selected");
+						$(this).find(".answer").slideToggle('fast');
+
+					});
+
+				});	
+				
+			}
+			
+		function makeid() {
+    			var text = "";
+    			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+			for( var i=0; i < 5; i++ )
+        			text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    			return text;
+		}
+		
+		</script>
+		
+		
+		<div id="footer">
+			<div class="center-element">
+			Copyright &copy; 2011 - 2014 <a href="http://www.studioxenix.com/">STUDIO XENIX</a>. By using XKit, you are
+			agreeing with the <a href="/eula/">XKit EULA</a>.<br/>
+			XKit is in no way associated with Tumblr, it is an independent project.<br/>
+			Also available on <a href="https://github.com/atesh/XKit">GitHub</a>, released under GPL v3.
+			</div>
+		</div>
+	
+	</body>
+
+</html><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/61188dc1067688e1d72fad69721bd29e?id=63031c63f2e6";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>
